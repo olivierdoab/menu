@@ -1,2 +1,2 @@
 # menu
-exemple de menus
+exemples de menu
