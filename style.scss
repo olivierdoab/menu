@@ -1,6 +1,49 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0;}
+
 body {
-  background-color: yellow;
+  background-color: whitesmoke; /* Blanc fumée */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
 }
-p {
-  background-color: brown;
+/* La page est limitée en largeur et centrée */
+.global {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: gainsboro; /* gris gainsboro */
+}
+.entete {
+  height: 80px;
+  padding: 10px;
+  background-color: lightgray;
+  font-size: 1rem;
+}
+nav {
+  background-color: lavender;
+}
+main {
+  padding: 10px;
+  text-align: justify;
+}
+.pied {
+  padding: 10px;
+  background-color: lightgray;
+}
+#menu {
+  display: flex;
+  list-style-type: none;
+  li {
+    flex: 0 1 auto;
+    a, a:visited {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      background-color: lightsteelblue;
+      color: brown;
+    }
+  }
 }
