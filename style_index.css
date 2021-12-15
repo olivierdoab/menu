@@ -1,9 +1,10 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body, div, ul {
+body {
   margin: 0;
   padding: 0;
 }
@@ -23,7 +24,7 @@ body {
   /* gris gainsboro */
 }
 
-.entete {
+header {
   height: 80px;
   padding: 10px;
   background-color: lightgray;
@@ -39,18 +40,24 @@ main {
   text-align: justify;
 }
 
-.pied {
+footer {
   padding: 10px;
   background-color: lightgray;
 }
 
 #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
+
 #menu li {
-  flex: 0 1 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
+
 #menu li a, #menu li a:visited {
   display: block;
   padding: 10px 20px;
@@ -58,7 +65,9 @@ main {
   text-decoration: none;
   color: black;
 }
+
 #menu li a:hover {
   background-color: lightsteelblue;
   color: brown;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style_index.css.map */

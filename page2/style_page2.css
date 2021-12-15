@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  /* Blanc fumée */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+/* La page est limitée en largeur et centrée */
+.global {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  /* gris gainsboro */
+}
+
+header {
+  height: 80px;
+  padding: 10px;
+  background-color: mediumaquamarine;
+  font-size: 1rem;
+}
+
+.mobile {
+  display: none;
+}
+
+nav {
+  background-color: lavender;
+}
+
+main {
+  padding: 10px;
+  text-align: justify;
+}
+
+footer {
+  padding: 10px;
+  background-color: mediumaquamarine;
+}
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+#menu li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+#menu li a, #menu li a:visited {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+}
+
+#menu li a:hover {
+  background-color: lightsteelblue;
+  color: brown;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 599px) {
+  .mobile {
+    display: block;
+  }
+  #menu {
+    display: block;
+    height: 0px;
+  }
+  #menu.afficher {
+    height: 200px;
+  }
+  #menu {
+    -webkit-transition: height 1s;
+    transition: height 1s;
+    overflow: hidden;
+    border-bottom: none;
+    background: none;
+  }
+}
+/*# sourceMappingURL=style_page2.css.map */

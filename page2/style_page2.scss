@@ -10,13 +10,16 @@ body {
 .global {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: gainsboro; /* gris gainsboro */
+  background-color: aquamarine; /* gris gainsboro */
 }
-.entete {
+header {
   height: 80px;
   padding: 10px;
-  background-color: lightgray;
+  background-color: mediumaquamarine;
   font-size: 1rem;
+}
+.mobile {
+  display: none;
 }
 nav {
   background-color: lavender;
@@ -25,9 +28,9 @@ main {
   padding: 10px;
   text-align: justify;
 }
-.pied {
+footer {
   padding: 10px;
-  background-color: lightgray;
+  background-color: mediumaquamarine;
 }
 #menu {
   display: flex;
@@ -45,5 +48,24 @@ main {
       background-color: lightsteelblue;
       color: brown;
     }
+  }
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 599px) {
+  .mobile { display: block; }
+
+  #menu {
+    display: block;
+    height: 0px;
+  }
+  #menu.afficher {
+    height: 200px;
+  }
+  #menu {
+    transition: height 1s;
+    overflow: hidden;
+    border-bottom: none;
+    background: none;
   }
 }

@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style_index.css">
+  <link rel="stylesheet" href="style_page2.css">
 </head>
+
 <body>
   <div class="global">  <!-- Conteneur général -->
     <header>
       <p>Logo et entête de la page</p>
     </header>
     <nav>
+      <!-- Bouton de menu avec le caractère burger : &#x2630; -->
+      <a href="#" id="boutonmenu" class="mobile"
+      onclick="menumobile(); return false; ">&#x2630;</a>
       <ul id="menu">
-        <li><a href="index.html">Page d'accueil</a></li>
-        <li><a href="page2/page2.html">Lien 2</a></li>
+        <li><a href="../index.html">Page d'accueil</a></li>
+        <li><a href="page2.html">Lien 2</a></li>
         <li><a href="page3.html">Lien 3</a></li>
         <li><a href="page4.html">Lien 4</a></li>
         <li><a href="page5.html">Lien 5</a></li>
       </ul>
     </nav>
     <main>
-      <h1>Page index</h1>
+      <h1>page 2</h1>
       <h2>Premier sous-titre</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis facilis nulla, porro rem id nobis, neque, corporis illo necessitatibus autem sint minima minus excepturi? In provident blanditiis ad laboriosam quia, incidunt consequuntur obcaecati eos facilis dolorem repudiandae cupiditate autem voluptatem ratione? Nesciunt amet perspiciatis ipsa dolorem nobis voluptatum atque assumenda laboriosam natus iusto non, unde quisquam sit doloremque sequi cum in perferendis, temporibus id repellat. A optio, in, id doloremque placeat ipsa minus incidunt velit aliquam iure recusandae sint molestias atque quaerat asperiores culpa, rerum saepe tempore ratione! Placeat beatae obcaecati amet blanditiis incidunt asperiores qui officia consequatur eveniet unde!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum hic consequuntur consequatur incidunt! Quos fugit voluptatum repudiandae aspernatur dignissimos cupiditate deserunt voluptates sint illo doloremque fuga beatae, temporibus nesciunt obcaecati veniam, voluptatibus voluptate voluptatem quibusdam aliquid quisquam nobis sunt tempora? Fugiat esse qui nihil iusto perspiciatis incidunt consequuntur quidem eaque! Provident beatae sint consequatur facere, ipsa dicta sunt alias eius minus vel temporibus deserunt iure quibusdam consectetur velit error perferendis sequi. Praesentium deserunt laudantium sit inventore adipisci, voluptas voluptate reiciendis libero ipsam quidem corporis unde cupiditate labore perferendis, perspiciatis similique dolorem fugiat ut incidunt! Reprehenderit obcaecati tempora doloribus. Similique, aperiam.</p>
@@ -33,6 +37,13 @@
     <footer>
       <p>Contenu du pied de page</p>
     </footer>
-  </div>  <!-- Fin du conteneur général  div.global -->
+  </div>  <!-- Fin du conteneur général div.global -->
+  <script>
+    function menumobile() {
+      var bloc = document.getElementById("menu");
+      // Bascule entre classe "afficher" ou non pour le menu :
+      bloc.classList.toggle("afficher");
+    }
+  </script>
 </body>
 </html>
